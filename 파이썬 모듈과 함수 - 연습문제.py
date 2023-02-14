@@ -55,13 +55,15 @@ class bank :
     def getBalance(self) :
         balance = int(input('최초 계좌의 잔액을 입력하세요 : '))
         self.balance = balance
-        print ('현재 계좌 잔액은 %d원 입니다' %self.balance)
+        result1 = self.balance
+        self.display(result1)
 
     def deposit(self) :
         money1 = int(input('입금액을 입력하세요 : '))
         self.money1 = money1
         self.balance += self.money1
-        print ('입금 후 잔액은 %d원 입니다' %self.balance)
+        result2 = self.balance
+        self.display(result2)
 
     def withdraw(self) :
         money2 = int(input('출금액을 입력하세요 : '))
@@ -72,6 +74,8 @@ class bank :
             self.balance -= self.money2
             print('출금 후 잔액은 %d원 입니다' %self.balance)
 
+    def display(self, result1, result2) :
+        print('현재 계좌 잔액은 %d원 입니다' %result1)
         
 
 
