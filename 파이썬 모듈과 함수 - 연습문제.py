@@ -55,37 +55,32 @@ class bank :
     def getBalance(self) :
         balance = int(input('최초 계좌의 잔액을 입력하세요 : '))
         self.balance = balance
-        result1 = self.balance
-        self.display(result1)
+        result = self.balance
+        print('현재 계좌 잔액은 %d원 입니다' %result)
+        self.deposit(result)
 
-    def deposit(self) :
+    def deposit(self, result) :
         money1 = int(input('입금액을 입력하세요 : '))
         self.money1 = money1
-        self.balance += self.money1
-        result2 = self.balance
-        self.display(result2)
+        result += self.money1
+        print('%d원 입금 후 잔액은 %d원 입니다' %(self.money1, result))
+        self.withdraw(result)
 
-    def withdraw(self) :
+    def withdraw(self, result) :
         money2 = int(input('출금액을 입력하세요 : '))
         self.money2 = money2
-        if self.balance < self.money2 :
+        if result < self.money2 :
             print('잔액이 부족합니다')
         else :
-            self.balance -= self.money2
-            print('출금 후 잔액은 %d원 입니다' %self.balance)
-
-    def display(self, result1, result2) :
-        print('현재 계좌 잔액은 %d원 입니다' %result1)
-        
-
+            result -= self.money2
+            print('출금 후 잔액은 %d원 입니다' %result)
+            
+jaein = bank()
+jaein.getBalance()
 
 
 
-
-
-
-
-
+# 3
 
 
 
