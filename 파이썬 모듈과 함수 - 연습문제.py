@@ -81,9 +81,50 @@ jaein.getBalance()
 
 
 # 3
+def fact(n) :
+    if n == 1 :
+        return 1
+    else :
+        result = n * fact(n-1)
+
+    return result
+
+result_fact = fact(5)
+print('팩토리얼 결과: ', result_fact)
 
 
 
+# 4
+class Rectangle :
+    width = 0
+    height = 0
+
+    def __init__(self, width, height) :
+        self.width = width
+        self.height = height
+
+    def area_calc(self) :
+        return self.width * self.height
+
+    def circum_calc(self) :
+        return (self.width + self.height) * 2
+
+print('사각형의 넓이와 둘레를 계산합니다.')
+w = int(input('사각형의 가로 입력: '))
+h = int(input('사각형의 세로 입력: '))
+
+print('-' * 30)
+rec = Rectangle(w, h)
+area = rec.area_calc()
+circum = rec.circum_calc()
+print('사각형의 넓이: ', area)
+print('사각형의 둘레: ', circum)
+print('-' * 30)
+
+
+
+
+        
 
 
 
