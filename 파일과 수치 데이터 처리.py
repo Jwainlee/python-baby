@@ -136,5 +136,37 @@ print(arr)                      # 1 ~ 3이 100으로 수정됨
 
 
 # 고차원 색인
+ar2 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print(ar2)
+print(ar2[::2])                 # 홀수행 선택
+
+ar3 = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+print(ar3.shape)
+print(ar3[0, 1])
+print(ar3[1, 1, 1:])
 
 
+# 난수
+data = np.random.rand(5, 3)
+print(data)
+print(data.mean())
+print(data.min())
+
+data = np.random.randint(165, 175, size = 10)
+dataa = np.random.randint(165, 175, size = (2, 5))
+print(data)
+print(dataa)
+
+
+# 정규분포 난수, 균등분포 난수
+normal = np.random.normal(0, 1, 1000)   # N(0, 1)
+print(normal)
+
+plt.hist(normal)
+plt.show()
+
+unif = np.random.uniform(0, 1, 1000)
+print(unif)
+
+plt.hist(unif)
+plt.show()
