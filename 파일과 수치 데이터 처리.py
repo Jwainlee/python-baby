@@ -85,7 +85,56 @@ for i in np.arange(3) :
 print(zer)
 
 
+# 유니버설 함수
+data = np.random.randn(5)
+print('data = ', data)
+print(np.abs(data))
+print(np.sqrt(data))
+print(np.square(data))
+print(np.sign(data))
+print(np.var(data))
+print(np.std(data))
+
+print(np.power(data, 2))
+print(np.maximum(data, 1))
+print(np.mod(data, 2))
+op1 = np.greater_equal(data, 0.1)
+op2 = np.less_equal(data, 0.4)
+print(data[np.logical_and(op1, op2)])
+
+data = np.random.randn(3, 4)
+print(data)
+print(np.mean(data))
+print(data.mean())
+print(data.max())
+print(data.sum())
 
 
+# 색인 참조
+ldata = [0, 1, 2, 3, 4, 5]
+print(ldata[:])
+print(ldata[3])
+print(ldata[:3])        # 0 ~ 2
+
+arr = np.arange(10)
+print(arr[3])
+
+# 슬라이싱 - 리스트
+ldata_obj = ldata[1:4]
+print(ldata_obj)
+
+ldata_obj[0] = 100
+print(ldata_obj)
+print(ldata)                    # 전체는 수정 안 됨
+
+# 슬라이싱 - 다차원 배열
+arr_obj = arr[1:4]
+print(arr_obj)
+
+arr_obj[:] = 100
+print(arr)                      # 1 ~ 3이 100으로 수정됨
+
+
+# 고차원 색인
 
 
