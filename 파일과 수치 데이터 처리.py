@@ -64,7 +64,25 @@ print(arr1 + arr2)
 print(arr1 * arr2)
 
 
+# zeros()
+zer = np.zeros((3, 5))
+print(zer)
 
+# arange()
+# print(range(-1.0, 10.5)) : range는 실수 불가
+x = np.arange(-1.0, 2, 0.1)
+y = x ** 2 + 2 * x + 3
+
+import matplotlib.pyplot as plt
+plt.plot(x, y)
+plt.show()
+
+cnt = 0
+for i in np.arange(3) :
+    for j in np.arange(5) :
+        cnt += 1
+        zer[i, j] = cnt
+print(zer)
 
 
 
