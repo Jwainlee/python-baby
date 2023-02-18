@@ -36,9 +36,14 @@ for i in range(len(arr2[:,])) :
 
 
 # 3
-
-
-
-
-
-
+import numpy as np
+zarr = np.zeros((6, 6))
+cnt = 0
+for i in range(6) :
+    for j in range(6) :
+        cnt += 1
+        zarr[i, j] = cnt 
+print(zarr)
+print(zarr[1])
+print(zarr[:,4])
+print(zarr[2:5, 2:5])
