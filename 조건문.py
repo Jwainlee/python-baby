@@ -122,7 +122,6 @@ print ('당신의 점수는 %d이고, 등급은 %s' %(score, grade))
 
 # 한 줄 조건문
 n = 9
-result = 0
 
 if n >= 5 :
     result = n * 2
