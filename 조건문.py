@@ -107,41 +107,9 @@ else :
     else :
         print('저조')
 
-저조
-score = int(input('점수 입력: '))
-점수 입력: 50
-if score >= 85 and score <= 100 :
-    print('우수')
-else :
-    if score >= 70 :
-        print('보통')
-    else :
-        print('저조')
 
-        
-저조
-score = int(input('점수 입력: '))
-점수 입력: 90
-if score >= 85 and score <= 100 :
-    print('우수')
-else :
-    if score >= 70 :
-        print('보통')
-    else :
-        print('저조')
-
-        
-우수
-score = int(input('점수 입력: '))
-점수 입력: 
-Traceback (most recent call last):
-  File "<pyshell#124>", line 1, in <module>
-    score = int(input('점수 입력: '))
-ValueError: invalid literal for int() with base 10: ''
 
 # 중립조건문
-grade = ''
-
 if score >= 85 and score <= 100 :
     grade = 'A'
 elif score >= 70 :
@@ -149,64 +117,18 @@ elif score >= 70 :
 else :
     grade = 'C'
 print ('당신의 점수는 %d이고, 등급은 %s' %(score, grade))
-SyntaxError: invalid syntax
-if score >= 85 and score <= 100 :
-    grade = 'A'
-elif score >= 70 :
-    grade = 'B'
-else :
-    grade = 'C'
-print ('당신의 점수는 %d이고, 등급은 %s' %(score, grade))
-SyntaxError: invalid syntax
-if score >= 85 and score <= 100 :
-    grade = 'A'
-elif score >= 70 :
-    grade = 'B'
-else :
-    grade = 'C'
 
 
-score = int(input('점수 입력: '))
-점수 입력: 90
-if score >= 85 and score <= 100 :
-    grade = 'A'
-elif score >= 70 :
-    grade = 'B'
-else :
-    grade = 'C'
-
-    
-print('너 점수는 %d, 등급은 %s임' %(score, grade))
-너 점수는 90, 등급은 A임
 
 # 한 줄 조건문
 n = 9
 result = 0
 
-if num >= 5 :
-    result = num * 2
-... else :
-...     result = num + 2
-... print()
-SyntaxError: invalid syntax
->>> if num >= 5 :
-...     result = num * 2
-... else :
-...     result = num + 2
-... 
-Traceback (most recent call last):
-  File "<pyshell#153>", line 1, in <module>
-    if num >= 5 :
-NameError: name 'num' is not defined. Did you mean: 'sum'?
->>> if n >= 5 :
-...     result = n * 2
-... else :
-...     result = n + 2
-... 
-...     
->>> print('result:', result)
-result: 18
->>> print('결과는 %d' %result)
-결과는 18
->>> 
->>> result2 = n * 2 if n >= 5 else n + 2
+if n >= 5 :
+    result = n * 2
+else : 
+    result = n + 2
+print('result: ', result)
+print('결과는 %d' %result)
+
+result2 = n * 2 if n >= 5 else n + 2
