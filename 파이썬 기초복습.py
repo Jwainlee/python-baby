@@ -42,7 +42,9 @@ while True :
         
 # 4
 lst = range(1,101)
+tot = 0
 lst2 = []
+
 for e in lst :
     if e % 3 == 0 and e % 2 != 0 :
         lst2.append(e)
@@ -153,71 +155,41 @@ print(lst4)
 # dict 객체
 dic = dict(key1 = 100, key2 = 200)
 print(dic)
-{'key1': 100, 'key2': 200}
-dic2 = {'name' = '신희훈', 'age' = 23}
-SyntaxError: cannot assign to literal here. Maybe you meant '==' instead of '='?
+
 dic2 = {'name' : '신희훈', 'age' : 23}
-dic2 = {'name' == '신희훈', 'age' == 23}
-print(dic2)
-{False}
-dic2 = {'name' : '신희훈', 'age' : 23}
-print(dic2)
-{'name': '신희훈', 'age': 23}
-# 중괄호 dict 정의는 : 만 가능하다.
+print(dic2)                       # 중괄호 dict 정의는 : 만 가능하다.
 
 print(dic2['name'])
-신희훈
-print(type(dic2))
-<class 'dict'>
+
 
 # dict 객체의 원소 수정, 삭제, 추가
 
 dic2['age'] = 80
-print(dic2)
-{'name': '신희훈', 'age': 80}
+
 del dic2['age']
 print(dic2)
-{'name': '신희훈'}
-dic2['gf'] = '이재인'
-print(dic2)
-{'name': '신희훈', 'gf': '이재인'}
+
 
 # dict 객체의 요소 검사
-print(dic2['gf'])
-이재인
-print('gf' in dic2)
-True
+print(dic2['name'])
+print('name' in dic2)
+
 
 # 요소 검사
 for key in dic2.keys() :
     print(key)
 
-    
-name
-gf
 for v in dic2.values() :
     print(v)
 
-...     
-신희훈
-이재인
->>> for i in dic2.items() :
-...     print(i)
-... 
-...     
-('name', '신희훈')
-('gf', '이재인')
->>> 
->>> # dict 사용 예시 - 단어 출현 빈도 수 구하기
->>> charset = ['이재인', '이재인', '윤지민', '권하영', '신희훈']
->>> wc = {}
->>> for key in charset :
-...     wc[key] = wc.get(key, 0) + 1
-... print(wc)
-SyntaxError: invalid syntax
->>> for key in charset :
-...     wc[key] = wc.get(key, 0) + 1
-... 
-...     
->>> print(wc)
-{'이재인': 2, '윤지민': 1, '권하영': 1, '신희훈': 1}
+
+for i in dic2.items() :
+   print(i)
+ 
+# dict 사용 예시 - 단어 출현 빈도 수 구하기
+charset = ['이재인', '이재인', '윤지민', '권하영', '신희훈']
+wc = {}
+for key in charset :
+     wc[key] = wc.get(key, 0) + 1
+
+print(wc)
