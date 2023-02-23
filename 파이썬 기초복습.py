@@ -26,16 +26,6 @@ while True :
 
 
 # 3
-fee = int(input('수하물의 무게는 얼마입니까?'))
-수하물의 무게는 얼마입니까?8
-while True L
-SyntaxError: incomplete input
-while True :
-    kg = int(input('수하물의 무게는 얼마입니까? '))
-    fee = kg // 10 * 10000
-    if fee = 0 :
-        
-SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
 while True :
     kg = int(input('수하물의 무게는 얼마입니까? '))
 
@@ -48,19 +38,8 @@ while True :
     else :
         print('수수료는 %d원 입니다.' %fee)
 
-        
-수하물의 무게는 얼마입니까? 8
-수수료는 없습니다.
-수하물의 무게는 얼마입니까? 15
-수수료는 10000원 입니다.
-수하물의 무게는 얼마입니까? 21
-수수료는 20000원 입니다.
-수하물의 무게는 얼마입니까? 30
-수수료는 30000원 입니다.
-수하물의 무게는 얼마입니까? 80
-수수료는 80000원 입니다.
-수하물의 무게는 얼마입니까? 0
 
+        
 # 4
 cnt = tot = 0
 
