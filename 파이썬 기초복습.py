@@ -1,5 +1,3 @@
-Python 3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
 # for 문과 if 문의 in
 words = ['재인', '승희', '채원', '하영']
 if '하영' in words :
@@ -8,64 +6,16 @@ else :
     print('하영 없다')
 
     
-광대하마
 # 1
 x = 2
 y = 2.5 * x ** 2 + 3.3 * x + 6
 print('2차 방정식 결과 = ', y)
-2차 방정식 결과 =  22.6
+
 
 #2
-fat = int(input('지방의 그램을 입력하세요 : '))
-지방의 그램을 입력하세요 : 25
-fat = car = pro = 0
-fat = int(input('지방의 그램을 입력하세요 : '))
-지방의 그램을 입력하세요 : 
-Traceback (most recent call last):
-  File "<pyshell#16>", line 1, in <module>
-    fat = int(input('지방의 그램을 입력하세요 : '))
-ValueError: invalid literal for int() with base 10: ''
-fat = car = pro = 0
 while True :
     fat = int(input('지방의 그램을 입력하세요 : '))
-    car = int(input('탄수화물의 그램을 입력하세요 : '))
-    pro = int(input('단백질의 그램을 입력하세요 : '))
-    tot_cal = fat * 9 + pro * 4 + car * 4
-    if fat == 80000
-    
-SyntaxError: incomplete input
-while True :
-    fat = int(input('지방의 그램을 입력하세요 : '))
-    car = int(input('탄수화물의 그램을 입력하세요 : '))
-    pro = int(input('단백질의 그램을 입력하세요 : '))
-    tot_cal = fat * 9 + pro * 4 + car * 4
-    print('총 칼로리는 %d입니다' %tot_cal)
-    if fat == 80000 :
-        break
-
-    
-지방의 그램을 입력하세요 : 25
-탄수화물의 그램을 입력하세요 : 520
-단백질의 그램을 입력하세요 : 45
-총 칼로리는 2485입니다
-지방의 그램을 입력하세요 : 80000
-탄수화물의 그램을 입력하세요 : 9
-단백질의 그램을 입력하세요 : 8
-총 칼로리는 720068입니다
-while True :
-    fat = int(input('지방의 그램을 입력하세요 : '))
-        if fat == 80000 :
-        break
-    car = int(input('탄수화물의 그램을 입력하세요 : '))
-    pro = int(input('단백질의 그램을 입력하세요 : '))
-    
-    tot_cal = fat * 9 + pro * 4 + car * 4
-    print('총 칼로리는 %d입니다' %tot_cal)
-    
-SyntaxError: unexpected indent
-while True :
-    fat = int(input('지방의 그램을 입력하세요 : '))
-    if fat == 80000 :
+    if fat == 80000 :                           # 탈출 조건
         break
     car = int(input('탄수화물의 그램을 입력하세요 : '))
     pro = int(input('단백질의 그램을 입력하세요 : '))
@@ -73,12 +23,7 @@ while True :
     tot_cal = fat * 9 + pro * 4 + car * 4
     print('총 칼로리는 %d입니다' %tot_cal)
 
-    
-지방의 그램을 입력하세요 : 25
-탄수화물의 그램을 입력하세요 : 520
-단백질의 그램을 입력하세요 : 45
-총 칼로리는 2485입니다
-지방의 그램을 입력하세요 : 80000
+
 
 # 3
 fee = int(input('수하물의 무게는 얼마입니까?'))
