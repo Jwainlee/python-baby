@@ -127,31 +127,29 @@ print(x)
 # 리스트 추가
 x.append(y)
 print(x)
-[1, 2, 3, 4, 2.5, 4.2, [2.5, 4.2]]
+
 
 # 리스트 확장 - 2
 result = y * 2
-print(result)
-[2.5, 4.2, 2.5, 4.2]
+print(result)               # [2.5, 4.2, 2.5, 4.2]
 result2 = x + y * 2
-print(result2)
-[1, 2, 3, 4, 2.5, 4.2, [2.5, 4.2], 2.5, 4.2, 2.5, 4.2]
+print(result2)              # [1, 2, 3, 4, 2.5, 4.2, [2.5, 4.2], 2.5, 4.2, 2.5, 4.2]
+
 
 # 리스트 내포
 lst = [2,4,1,5,7]
+
 lst2 = [i ** 2 for i in lst]
 print(lst2)
-[4, 16, 1, 25, 49]
+
 lst3 = ['짝수' if i % 2 ==0 else '홀수' for i in lst2]
 print(lst3)
-['짝수', '짝수', '홀수', '홀수', '홀수']
-lst4 = [i * 2 for i in lst if i % 2 == 0 else i]
-SyntaxError: invalid syntax
+
 lst4 = [i * 2 for i in lst if i % 2 == 0]
 print(lst4)
-[4, 8]
-lovely Jae In♥[4, 8]
-SyntaxError: invalid character '♥' (U+2665)
+
+
+
 # dict 객체
 dic = dict(key1 = 100, key2 = 200)
 print(dic)
